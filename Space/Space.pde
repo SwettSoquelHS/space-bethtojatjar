@@ -9,7 +9,7 @@ void setup() {
   normalBubbles = new Bubble[100];
   for (int i = 0; i < normalBubbles.length; i++) {
 
-    int x = (int)(width * Math.random());
+    int x = (int)(width * Math.random() + 1);
     int y = 600;
     normalBubbles[i] = new Bubble(x, y);
   }
@@ -17,6 +17,7 @@ void setup() {
 
 
 void draw() {
+  background(#714B2C);
   for (int i = 0; i < normalBubbles.length; i++) {
     normalBubbles[i].show();
     normalBubbles[i].move();
