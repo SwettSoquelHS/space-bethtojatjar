@@ -1,10 +1,10 @@
 class Bubble {
-  int x_pos;
-  int y_pos;
+  float x_pos;
+  float y_pos;
 
   public Bubble(float x, float y) {
-    x = x_pos;
-    y = y_pos;
+    x_pos = x;
+    y_pos = y;
   }
 
   void show() {
@@ -17,14 +17,16 @@ class Bubble {
 
   void move() {
     y_pos = y_pos - (int)(2 * Math.random());
-    x_pos = x_pos + (int)(10 * Math.random());
-    x_pos = x_pos - (int)(10 * Math.random());
+    x_pos = x_pos + (int)(5 * Math.random());
+    x_pos = x_pos - (int)(5 * Math.random());
     if (y_pos < 0) {
       y_pos = height;
     }
 
     if (x_pos < 0) {
       x_pos = width;
+    } else if (x_pos > width) {
+      x_pos = 0;
     }
   }
 }

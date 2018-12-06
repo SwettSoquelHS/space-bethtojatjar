@@ -5,11 +5,12 @@ Bubble[] normalBubbles;
 void setup() {
   size(600, 600);
   background(#714B2C);
+  frameRate(120);
   noStroke();
-  normalBubbles = new Bubble[100];
+  normalBubbles = new Bubble[50];
   for (int i = 0; i < normalBubbles.length; i++) {
 
-    int x = (int)(width * Math.random() + 1);
+    int x = (int)(width * Math.random());
     int y = 600;
     normalBubbles[i] = new Bubble(x, y);
   }
