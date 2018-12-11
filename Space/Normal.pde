@@ -13,6 +13,12 @@ class Bubble {
     fill(#CE8B53, 45);
     ellipse(0, 0, 65, 65);
     popMatrix();
+    
+     pushMatrix();
+     translate(x_pos,y_pos);
+     fill(#F2B769,45);
+     ellipse(10,-19,25,25);
+     popMatrix();
   }
 
   void move() {
