@@ -22,8 +22,8 @@ class Icecube {
 
   void move() {
     y_pos = y_pos - (int)(4.5 * Math.random());
-    x_pos = x_pos + (int)(6 * Math.random());
-    x_pos = x_pos - (int)(7 * Math.random());
+    x_pos = x_pos + (int)(17 * Math.random());
+    x_pos = x_pos - (int)(17 * Math.random());
     if (y_pos < 0) {
       y_pos = height;
     }
